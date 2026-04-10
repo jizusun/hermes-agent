@@ -102,6 +102,9 @@ _PROVIDER_MODELS: dict[str, list[str]] = {
     "copilot-acp": [
         "copilot-acp",
     ],
+    "kiro-acp": [
+        "kiro-acp",
+    ],
     "copilot": [
         "gpt-5.4",
         "gpt-5.4-mini",
@@ -515,6 +518,7 @@ CANONICAL_PROVIDERS: list[ProviderEntry] = [
     ProviderEntry("huggingface",  "Hugging Face",             "top",      "Hugging Face Inference Providers (20+ open models)"),
     # -- Extended tier (behind "More..." in hermes model) --
     ProviderEntry("copilot-acp",    "GitHub Copilot ACP",       "extended", "GitHub Copilot ACP (spawns `copilot --acp --stdio`)"),
+    ProviderEntry("kiro-acp",       "Kiro CLI ACP",             "extended", "Kiro CLI ACP (spawns `kiro-cli acp`)"),
     ProviderEntry("gemini",         "Google AI Studio",         "extended", "Google AI Studio (Gemini models — OpenAI-compatible endpoint)"),
     ProviderEntry("deepseek",       "DeepSeek",                 "extended", "DeepSeek (DeepSeek-V3, R1, coder — direct API)"),
     ProviderEntry("xai",            "xAI",                      "extended", "xAI (Grok models — direct API)"),
@@ -546,6 +550,9 @@ _PROVIDER_ALIASES = {
     "github-model": "copilot",
     "github-copilot-acp": "copilot-acp",
     "copilot-acp-agent": "copilot-acp",
+    "kiro": "kiro-acp",
+    "kiro-cli": "kiro-acp",
+    "kiro-acp-agent": "kiro-acp",
     "google": "gemini",
     "google-gemini": "gemini",
     "google-ai-studio": "gemini",
